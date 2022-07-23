@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>explor-flexbox</title>
+    <style>
+        .box {
+            font-size: 3ex;
+            font-weight: 800;
+            height: 100px;
+            width: 100px;
+            border: 1px dashed rgb(13, 14, 13);
+        }
+
+        .containner-1 {
+            border: 2px solid rgb(216, 11, 182);
+            display: flex;
+            /* justify-content: flex-end; */
+            /* justify-content: center; */
+            justify-content: space-between;
+            justify-content: space-around;
+            justify-content: space-evenly;
+            justify-content: safe;
+            height: 300px;
+        }
+
+        .containner-2 {
+            border: 2px solid rgb(216, 11, 182);
+            display: flex;
+
+            justify-content: space-evenly;
+            justify-content: safe;
+            height: 300px;
+            align-items: center;
+            /* align-items: flex-end; */
+            justify-content: center;
+        }
+
+        .containner-3 {
+            border: 2px solid rgb(216, 11, 182);
+            display: flex;
+
+            justify-content: space-evenly;
+            justify-content: safe;
+            height: 300px;
+            align-items: center;
+            /* align-items: flex-end; */
+            /* flex-direction: row-reverse; */
+            flex-direction: column-reverse;
+        }
+
+        .containner-4 {
+            border: 2px solid rgb(216, 11, 182);
+            display: flex;
+
+            justify-content: space-evenly;
+            justify-content: safe;
+            height: 300px;
+            align-items: center;
+            flex-wrap: wrap;
+
+        }
+
+        .containner-5 {
+            border: 2px solid rgb(216, 11, 182);
+            display: flex;
+            height: 300px;
+            justify-items: stretch;
+
+        }
+
+        .box-5 {
+            font-size: 3ex;
+            font-weight: 800;
+
+            width: 100px;
+            border: 1px dashed rgb(13, 14, 13);
+        }
+
+        #box-88 {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="flex-1">
+        <div class="containner-1">
+
+            <div class="box">box-1</div>
+            <div class="box">box-2</div>
+            <div class="box">box-3</div>
+            <div class="box">box-4</div>
+
+        </div>
+
+    </section>
+    <br>
+    <section class="flex-2">
+        <div class="containner-2">
+
+            <div class="box">box-1</div>
+            <div class="box">box-2</div>
+            <div class="box">box-3</div>
+            <div class="box">box-4</div>
+
+        </div>
+
+    </section>
+    <br>
+    <section class="flex-3">
+        <div class="containner-3">
+
+            <div class="box">box-1</div>
+            <div class="box">box-2</div>
+            <div class="box">box-3</div>
+            <div class="box">box-4</div>
+
+        </div>
+
+    </section>
+    <br>
+    <section class="flex-4">
+        <div class="containner-4">
+            <div class="box">box-1</div>
+            <div class="box">box-2</div>
+            <div class="box">box-3</div>
+            <div class="box">box-4</div>
+            <div class="box">box-5</div>
+            <div class="box">box-6</div>
+            <div class="box">box-7</div>
+            <div class="box">box-8</div>
+            <div class="box">box-9</div>
+            <div class="box">box-10</div>
+        </div>
+    </section>
+    <br>
+    <section class="flex-5">
+        <div class="containner-5">
+
+            <div class="box-5">box-1</div>
+            <div id="box-88" class="box-5">box-2</div>
+
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
